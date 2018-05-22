@@ -14,8 +14,8 @@ OSXにて、[Docker For Mac](https://www.docker.com/docker-mac)のインスト�
 - host
 	- db
 - user / password
-- root / yQqDx.4(Cnue
-- ruby / GdS)FP6*B7zJ
+	- root / yQqDx.4(Cnue
+	- ruby / GdS)FP6*B7zJ
 
 ## 環境構築
 ### 初回のみ
