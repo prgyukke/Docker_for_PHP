@@ -1,10 +1,9 @@
 FROM php:7.1-fpm
 
+ADD ./PHP/php.ini /usr/local/etc/php/php.ini
+
 # Debian系のディストリビューションのパッケージ管理ツール
 RUN apt-get update
-
-# zip、unzipコマンドをインストール
-RUN apt-get install -y zip unzip
 
 # 必要なPHP拡張モジュールをインストール
 RUN apt-get install -y libpq-dev \

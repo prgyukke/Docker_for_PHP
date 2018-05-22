@@ -2,5 +2,9 @@ FROM nginx:1.13
 
 ADD ./nginx/default.conf /etc/nginx/conf.d/default.conf
 
+ENV TZ Asia/Tokyo
+RUN echo "${TZ}" > /etc/timezone \
+   && dpkg-reconfigure -f noninteractive tzdata
+
 # ワーキングディレクトリを指定
 WORKDIR /var/www/html
