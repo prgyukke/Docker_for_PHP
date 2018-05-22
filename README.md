@@ -33,6 +33,9 @@ $ cd Docker_for_PHP/docker/
 $ docker-compose up -d
 ```
 
+### ブラウザ確認時のURI
+`http://localhost:8000/`
+
 ### コンテナに入る際
 mac上の`Docker_for_PHP/docker/`にて
 
