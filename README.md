@@ -10,6 +10,13 @@ OSXにて、[Docker For Mac](https://www.docker.com/docker-mac)のインスト�
 - MySQL 5.7
 - nginx
 
+### MySQL情報
+- host
+	- db
+- user / password
+- root / yQqDx.4(Cnue
+- ruby / GdS)FP6*B7zJ
+
 ## 環境構築
 ### 初回のみ
 ```
@@ -27,19 +34,31 @@ $ docker-compose up -d
 ```
 
 ### コンテナに入る際
+mac上の`Docker_for_PHP/docker/`にて
+
+#### webコンテナ
 ```
-# mac上の`Docker_for_PHP/docker/`にて
 $ docker exec -it docker_web_1 /bin/bash
 ```
 
-### コンテナを抜ける際
+#### app(PHP)コンテナ
 ```
-# コンテナ上にて
-# docker exec -it docker_app_1 /bin/bash
+$ docker exec -it docker_app_1 /bin/bash
+```
+
+#### dbコンテナ
+```
+$ docker exec -it docker_db_1 /bin/bash
+```
+
+### コンテナを抜ける際
+コンテナ上にて
+```
+# exit
 ```
 
 ### 開発終了時
 ```
 $ docker-compose down
-$ docker rmi docker_app
+$ docker rmi docker_app docker_web
 ```
